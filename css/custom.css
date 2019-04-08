@@ -1,0 +1,10 @@
+/*This is my custom CSS*/
+* {
+    overflow: hidden !important;
+}
+
+/* Particles JS */
+#particles-js canvas {
+    position: absolute;
+    height: 100vh;
+}
