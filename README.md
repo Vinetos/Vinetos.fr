@@ -1,6 +1,6 @@
 # Vinetos.fr
 
-This is the project which contains the website of Vinetos.
+This is the project which contains the website of Vinetos. Currently In-dev : [vinetos.fr](https://www.vinetos.fr)
 
 ## Install for dev
 
