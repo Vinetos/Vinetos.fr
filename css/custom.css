@@ -1,4 +1,9 @@
 /*This is my custom CSS*/
+@font-face {
+    font-family: "Sans Forgetica";
+    src: url(SansForgetica-Regular.otf);
+}
+
 * {
     overflow: hidden !important;
 }
