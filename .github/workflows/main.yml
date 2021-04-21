@@ -22,6 +22,6 @@ jobs:
         with:
           REPOSITORY_NAME: Vinetos/vinetos.github.io
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: master
+          BRANCH: main
           FOLDER: dist
           CLEAN: true
