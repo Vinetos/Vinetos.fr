@@ -29,7 +29,7 @@
     </div>
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title is-size-1-desktop is-size-2-touch is-uppercase is-family-code glitch" data-text="Vinetos">
+        <h1 class="title is-size-1-desktop is-size-2-touch is-uppercase glitch" data-text="Vinetos">
           Vinetos
         </h1>
         <h2 class="subtitle is-size-6-touch has-text-centered is-inline-flex">

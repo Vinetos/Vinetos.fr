@@ -1,19 +1,8 @@
 <template>
   <div id="app">
-    <Main/>
+    <router-view/>
   </div>
 </template>
-
-<script>
-import Main from "./components/Main";
-
-export default {
-  name: 'App',
-  components: {
-    Main,
-  }
-}
-</script>
 
 <style lang="scss">
 @font-face {
@@ -24,7 +13,7 @@ export default {
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
-$family-code: "Sans Forgetica";
+$family-code-test: "Sans Forgetica";
 
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
