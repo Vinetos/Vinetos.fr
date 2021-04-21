@@ -1,55 +1,27 @@
-# Vinetos.fr
+# Vue 3 + Typescript + Vite
 
-This is the project which contains the website of Vinetos. Currently In-dev : [vinetos.fr](https://www.vinetos.fr)
+This template should help get you started developing with Vue 3 and Typescript in Vite.
 
-## Install for dev
+## Recommended IDE Setup
 
-```sh
-git clone https://github.com/Vinetos/Vinetos.fr
-cd Vinetos.fr
-npm install
-npm start
-```
+[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
 
-As long as `npm start` is running, it will **watch** your changes. You can edit `_sass/main.scss` and `_javascript/main.js` at will. Changes are **immediately** compiled to their destinations, where `index.html` will pick them up upon reload in your browser.
+### If Using `<script setup>`
 
-Some controlling output is written to the `npm start` console in that process:
+[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
 
-```sh
-_javascript/main.js -> lib/main.js
+## Type Support For `.vue` Imports in TS
 
-=> changed: $HOME/projects/start-with-bulma/_sass/main.scss
-Rendering Complete, saving .css file...
-Wrote CSS to $HOME/projects/start-with-bulma/css/main.css
-```
+Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
 
-Use `npm run` to show all available commands:
+### If Using Volar
 
-```sh
-Lifecycle scripts included in bulma-start:
-  start
-    npm-run-all --parallel css-watch js-watch
+Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 
-available via `npm run-script`:
-  css-build
-    node-sass _sass/main.scss css/main.css
-  css-deploy
-    npm run css-build && npm run css-postcss
-  css-postcss
-    postcss --use autoprefixer --output css/main.css css/main.css
-  css-watch
-    npm run css-build -- --watch
-  deploy
-    npm run css-deploy && npm run js-build
-  js-build
-    babel _javascript --out-dir lib
-  js-watch
-    npm run js-build -- --watch
-```
+### If Using Vetur
 
-If you want to learn more, follow these links: [Bulma homepage](http://bulma.io) and [Documentation](http://bulma.io/documentation/overview/start/).
-
-
-## Copyright and license
-
-Code copyright 2019 Chassignol Valentin. Code released under [the MIT license](https://github.com/Vinetos/Vinetos.fr/blob/master/LICENSE).
+1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
+2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
+3. Open `src/main.ts` in VSCode
+4. Open the VSCode command palette
+5. Search and run "Select TypeScript version" -> "Use workspace version"
