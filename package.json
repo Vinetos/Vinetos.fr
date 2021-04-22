@@ -14,7 +14,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "buefy": "^0.9.6",
+    "buefy": "^0.9.7",
     "core-js": "^3.6.5",
     "sass": "^1.32.11",
     "sass-loader": "10.1.1",
